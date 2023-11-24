@@ -19,29 +19,38 @@
         </div>
 
         <div class="converter">
-            <label for="amount">Amount</label>
-            <input type="number" value="1000" id="usd-input">
-            <div class="select-box">
-                <img src="https://www.countryflags.io/us/flat/64.png" alt="flag">
-                <select>
-                    <option value="USD">USD</option>
-                    <option value="CAD">CAD</option>
-                </select>
+            <div class="amount-section">
+                <label for="amount">Amount</label>
+                <br>
+                <input type="number" value="1000" id="usd-input">
+                <div class="select-box">
+                    <img src="https://emojipedia.org/flag-united-states" alt="flag">
+                    <select>
+                        <option value="USD">USD</option>
+                        <option value="CAD">CAD</option>
+                    </select>
+                </div>
             </div>
+
             <div class="icon"><i class="fas fa-exchange-alt"></i></div>
-            <label for="convertedto">Converted to</label>
-            <input type="number" value="1358.90" id="can-input">
-            <div class="select-box">
-                <img src="https://www.countryflags.io/np/flat/64.png" alt="flag">
-                <select>
-                    <option value="USD">CAD</option>
-                    <option value="CAD">USA</option>
-                </select>
+
+            <div class="converted-to-section">
+                <label for="convertedto">Converted to</label>
+                <br>
+                <input type="number" value="1358.90" id="can-input">
+                <div class="select-box">
+                    <img src="https://emojipedia.org/flag-canada" alt="flag">
+                    <select>
+                        <option value="USD">CAD</option>
+                        <option value="CAD">USA</option>
+                    </select>
+                </div>
             </div>
-
-
-            <button id="convert-btn">Convert</button>
+            
         </div>
+
+        <button id="convert-btn">Convert</button>
+
     </div>
    
 </body>
