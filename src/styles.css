@@ -50,7 +50,8 @@ body{
 .icon{
     width: 10%;
     color:#75bfec;
-    margin-left: 80px;
+    margin-left: 85px;
+    margin-top: 20px;
 }
 
 .converted-to-section{
@@ -100,5 +101,6 @@ button{
     background-color: #304674;
     margin-right: 80px;
     cursor: pointer;
+    border: none;
 }
 
