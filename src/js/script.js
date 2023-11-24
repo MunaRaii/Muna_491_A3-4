@@ -1,9 +1,11 @@
-// convert USD amount to CAD amount
+//convert USD amount to CAD amount
 function convertUsdToCad(){
+    //get input value of USD from HTML element
     const usdAmount = parseFloat(document.getElementById('usd-input').value);
     const exchangeRate = 1.360;
     const cadAmount = (usdAmount * exchangeRate).toFixed(3);
 
+    // checks if the result is valid number or not
     if(!isNaN(cadAmount)) {
         document.getElementById('can-input').value = cadAmount;
     } else{
@@ -11,7 +13,7 @@ function convertUsdToCad(){
     }
 }
 
-// switch USD and CAD and perform conversion
+//interchange USD and CAD currency
 function interchangeCurrency(){
     const usdInput = document.getElementById('usd-input');
     const cadInput = document.getElementById('can-input');
@@ -25,15 +27,21 @@ function interchangeCurrency(){
     cadInput.value = usdAmount.toFixed(3);
 }
 
-// convert CAD amount to USD amount
+//convert CAD amount to USD amount
 function convertCadToUsd(){
-    const cadAmount = parseFloat(document.getElementById('can-input')).value;
+    //get input value of CAD from HTML element
+    const cadAmount = parseFloat(document.getElementById('cad-input')).value;
     const exchangeRate = 0.735;
     const usdAmount = (cadAmount * exchangeRate).toFixed(3);
 
+    // checks if the result is valid number or not
     if(!isNaN(usdAmount)){
         document.getElementById('usd-input').value = usdAmount;
     } else{
         alert('Invalid Input!! Please enter CAD amount.')
     }
 }
+
+
+
+
