@@ -23,7 +23,7 @@
                 <label for="amount">Amount</label>
                 <br>
                 <div class="input-wrapper">
-                    <input type="number" value="1000" id="usd-input">
+                    <input type="number" id="usd-input">
                     <div class="select-box">
                         <img src="/src/img/us.svg" alt="flag">
                         <p>USD</p>
@@ -31,13 +31,13 @@
                 </div>
             </div>
 
-            <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+            <div class="icon" onclick="interchangeUsdAndCad()"><i class="fas fa-exchange-alt"></i></div>
 
             <div class="converted-to-section">
                 <label for="convertedto">Converted to</label>
                 <br>
                 <div class="input-wrapper">
-                    <input type="number" value="1358.90" id="can-input">
+                    <input type="number" id="can-input">
                     <div class="select-box">
                         <img src="/src/img/ca.svg" alt="flag">
                         <p>CAD</p>
@@ -47,9 +47,11 @@
             
         </div>
 
-        <button id="convert-btn">Convert</button>
+        <button id="usdToCadBtn" onclick="convertUsdToCad()">Convert</button>
 
     </div>
+
+    <script src="script.js"></script>
    
 </body>
 </html>
